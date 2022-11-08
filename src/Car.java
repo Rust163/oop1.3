@@ -18,8 +18,11 @@ public class Car {
         } else {
             this.model = model;
         }
-
-        this.year = year;
+        if(year >= 0){
+            this.year = 2000;
+        } else {
+            this.year = year;
+        }
 
         if (color.length() == 0) {
             this.color = "белый";
